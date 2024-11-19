@@ -1,3 +1,3 @@
-const API_URL = 'http://api.gobloomevent.com';
+const API_URL = 'https://api.gobloomevent.com';
 
 export default API_URL;
