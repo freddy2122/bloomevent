@@ -16,7 +16,7 @@ const All = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await fetch('https://api.gobloomevent.com/api/events'); // Récupérer les événements depuis l'API
+                const response = await fetch(`${API_URL}/api/events`); // Récupérer les événements depuis l'API
                 const data = await response.json();
                 const featuredEvents = data.events.filter(event => event.is_featured === 1); // Filtrer les événements en fonction de is_featured
                 setEvents(featuredEvents); // Mettre à jour l'état avec les événements filtrés
